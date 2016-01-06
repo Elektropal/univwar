@@ -1,0 +1,20 @@
+[03-Dec-2015 07:43:52 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/elektrop/public_html/univwar/index.php on line 63
+[03-Dec-2015 08:29:37 UTC] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home/elektrop/public_html/univwar/index.php on line 64
+[03-Dec-2015 08:29:56 UTC] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home/elektrop/public_html/univwar/index.php on line 64
+[03-Dec-2015 08:29:58 UTC] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home/elektrop/public_html/univwar/index.php on line 64
+[03-Dec-2015 09:41:10 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/elektrop/public_html/univwar/index.php on line 66
+[03-Dec-2015 09:41:28 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/elektrop/public_html/univwar/index.php on line 87
+[19-Dec-2015 16:12:58 UTC] PHP Parse error:  syntax error, unexpected 'printf' (T_STRING) in /home/elektrop/public_html/univwar/index.php on line 115
+[19-Dec-2015 16:13:15 UTC] PHP Parse error:  syntax error, unexpected '$url' (T_VARIABLE) in /home/elektrop/public_html/univwar/index.php on line 115
+[25-Dec-2015 08:21:40 UTC] PHP Warning:  phpinfo() has been disabled for security reasons in /home/elektrop/public_html/univwar/info.php on line 2
+[25-Dec-2015 10:15:24 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/elektrop/public_html/univwar/medoo.php:150
+Stack trace:
+#0 /home/elektrop/public_html/univwar/index.php(12): medoo->__construct(Array)
+#1 {main}
+  thrown in /home/elektrop/public_html/univwar/medoo.php on line 150
+[25-Dec-2015 10:16:44 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 1861 bytes) in /home/elektrop/public_html/univwar/index.php on line 27
+[25-Dec-2015 10:17:13 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 1861 bytes) in /home/elektrop/public_html/univwar/index.php on line 27
+[25-Dec-2015 10:18:52 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 1861 bytes) in /home/elektrop/public_html/univwar/index.php on line 27
+[25-Dec-2015 10:19:23 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 1861 bytes) in /home/elektrop/public_html/univwar/index.php on line 27
+[25-Dec-2015 10:24:08 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 1861 bytes) in /home/elektrop/public_html/univwar/index.php on line 27
+[25-Dec-2015 10:24:39 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 1861 bytes) in /home/elektrop/public_html/univwar/index.php on line 27
