@@ -14,7 +14,6 @@
 
     <!-- Custom styles for this template -->
     <link href="<?=$view_path?>assets/css/main.css" rel="stylesheet">
-	<link rel="stylesheet" href="<?=$view_path?>assets/css/font-awesome.min.css">
 
     <script src="<?=$view_path?>assets/js/jquery.min.js"></script>
 	<script src="<?=$view_path?>assets/js/Chart.js"></script>
@@ -24,6 +23,8 @@
 	
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -93,24 +94,102 @@
 	<div id="g">
 		<div class="container">
 			<div class="row">
-				<h3>Cara ikutan :</h3>
-				<br>
-				<br>
-				<div class="col-sm-4">
-					<img src="<?=$view_path?>assets/img/s1.png">
-					<h4>Daftarkan Email kamu,</h4>
-					<p>Kami membutuhkan informasi email kamu untuk menghubungi kamu jika Universitasmu terpilih menjadi pemenang. Gunakan email universitasmu untuk memverikasi</p>
-				</div>
-				<div class="col-sm-4">
-					<img src="<?=$view_path?>assets/img/s2.png">
-					<h4>Lakukan verifikasi Email</h4>
-					<p>Kami akan mengirimkan email verifikasi untuk memastikan bahwa kamu telah bergabung dalam #UniveristyWar, jangan lupa untuk mengklik link verifikasi ini.</p>
-				</div>
-				<div class="col-sm-4">
-					<img src="<?=$view_path?>assets/img/s3.png">
-					<h4>Sebarkan !</h4>
-					<p>Kami menghitung point universitas berdasarkan jumlah email terverifikasi yang masuk. Semakin banyak teman-temanmu yang ikut berpartisipasi dalam #UniversityWar, semakin besar kesempatan universitasmu terpilih !</p>
-				</div>
+                <div class="col-sm-6">
+                	<div class="row"> 
+                    <div class="col-sm-8 col-sm-offset-4" style="text-align: left;">
+                        <h3>Cara ikutan :</h3>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="<?=$view_path?>assets/img/mail.png">
+                        </div>
+                        <div class="col-sm-8" style="text-align: left;">
+                           <h4>Daftarkan Email kamu,</h4>
+					       <p>Daftarkan email pribadi dan email kampus kamu untuk ikut #UniversityWar. Email digunakan untuk menghitung banyak peserta, pengumuman pemenang dan langganan promo elektropal lainnya. </p>
+                        </div>
+                    </div>
+                    <div class="row">	
+                        <div class="col-sm-4">
+                            <img src="<?=$view_path?>assets/img/inbox.png">
+                        </div>
+                        <div class="col-sm-8" style="text-align: left;">
+                           <h4>Lakukan verifikasi Email</h4>
+					       <p>Kami akan mengirimkan email verifikasi untuk memastikan bahwa kamu telah bergabung dalam #UniveristyWar, jangan lupa untuk mengklik link verifikasi di email kamu.</p>
+                        </div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-sm-4">
+                            <img src="<?=$view_path?>assets/img/graphic.png">
+                        </div>
+                        <div class="col-sm-8" style="text-align: left;">
+                           <h4>Sebarkan!</h4>
+							<p>Perhitungan point universitas berdasarkan jumlah email terverifikasi yang masuk. Semakin banyak teman-temanmu yang ikut berpartisipasi dalam #UniversityWar, semakin besar kesempatan universitasmu terpilih. Jadi jangan lupa share ke akun sosial kamu!</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="col-sm-6">
+                    <div class="col-md-12" style="text-align: left;">
+                        <h3>1. Isi Email :</h3>
+                        <p>Masukkan email pribadi dan email kampus kamu dibawah ini.</p>
+                    </div>
+                    <form id="loginForm" method="POST" action="<?=Flight::get('my_base_url')?>/submit" novalidate="novalidate">
+	  					<div class="form-group col-md-12" style="text-align: left;">
+	  						<label for="email_pribadi" class="control-label">Email Personal</label>
+	  						<input type="text" class="form-control" id="email_pribadi" name="email_pribadi" value="" required="" title="Please enter you Full name" placeholder="example@gmail.com">
+	  						<span class="help-block"></span>
+	  					</div>
+	  					<div class="form-group col-md-12" style="text-align: left;">
+	  						<label for="email_pribadi" class="control-label">Email Universitas</label>
+	  						<input type="text" class="form-control" id="email_univ" name="email_univ" value="" required="" title="Please enter you College name" placeholder="example@gmail.com">
+	  						<span class="help-block"></span>
+	  					</div>
+	  					<div class="col-md-12 captcha" style="text-align: left;">
+	  						<label for="email_pribadi" class="control-label">Kode captcha</label>
+	  						<div class="centered g-recaptcha" data-sitekey="<?php echo $recaptcha_key; ?>"></div>
+	  					</div>
+                        <div class="form-group col-md-12" style="text-align: left;">
+                            <button type="submit" class="btn btn-lg btn-success"> Saya ikut #UniversityWar!</button>
+                            <br/>
+	  					    <a href="/forgot/">Salah ketik memasukan email ? Klik disini !</a>
+                        </div>
+	  				</form>
+                    <hr>
+                    <div class="col-md-12" style="text-align: left;">
+                        <h3>2. Share ke Teman :</h3>
+                        <p>Share ke teman melalui akun sosial favoritmu.</p>
+                    </div>
+                    <div class="col-md-5">
+                    	
+                		<a class="btn btn-block btn-social btn-twitter">
+                            <span class="fa fa-twitter"></span> Share melalui Twitter
+                        </a>
+                		<br>
+                        
+                    	<a class="btn btn-block btn-social btn-facebook col-md-6">
+                            <span class="fa fa-facebook"></span> Share melalui Facebook
+                        </a>
+                    	
+                    </div>
+                    <div class="col-md-5">
+                    	
+                		<a class="btn btn-block btn-social btn-google">
+                            <span class="fa fa-google"></span> Share melalui Google
+                        </a>
+                		<br>
+                        
+                    	<a class="btn btn-block btn-social btn-reddit col-md-6">
+                            <span class="fa fa-envelope"></span> Share melalui Email
+                        </a>
+                    	
+                    </div>
+                    
+                    
+                      
+                </div>
 			</div>
 		</div><!-- /container -->
 	</div><!-- /g -->
@@ -119,7 +198,8 @@
 	<div id="dg">
 		<div class="container">
 			<div class="row">
-				<h3>Hmm.. boleh juga ikutan ah..</h3>
+				<h3>Ganti dengan grafik</h3>
+				<!--
 				<br>
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 					Ikut #UniversityWar Sekarang Juga !
@@ -128,7 +208,7 @@
 				<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
 					Lihat Urutan Universitas Saat Ini
 				</button>
-				<!--
+				
 				<div class="col-md-12">
 					<div class="input-group col-md-3">
 						<input class="form-control input-lg" title="Don't worry. We hate spam, and will not share your email with anyone." placeholder="Masukan Email Pribadi kamu" type="text">
