@@ -204,7 +204,7 @@
 		<div class="container">
 			<div class="row">
 				<h3>Ganti dengan grafik</h3>
-				<div id="container_highcharts"></div> <!-- style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div> -->
+				<div id="container_highcharts" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
 				<!--
 				<br>
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -348,7 +348,7 @@
 	
 	<div id="c">
 		<div class="container">
-			<p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+			<p><a href="http://www.elektropal.com">Elektropal.com</a></p>
 		
 		</div>
 	</div>

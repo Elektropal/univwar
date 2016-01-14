@@ -5,18 +5,18 @@ $(function () {
 		dataType:"json",
 		success :function(data){
 			console.log(data);
-			$('#container').highcharts({
+			$('#container_highcharts').highcharts({
 			    chart: {
 			        type: 'bar'
 			    },
 			    title: {
-			        text: 'Stacked bar chart'
+			        text: 'Posisi Universitas Saat ini'
 			    },
 			    xAxis: data.result.xaxis,
 			    yAxis: {
 			        min: 0,
 			        title: {
-			            text: 'Total fruit consumption'
+			            text: 'Jumlah total'
 			        }
 			    },
 			    legend: {
