@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="<?=$view_path?>assets/ico/favicon.png">
 
-    <title>Onassis - Bootstrap 3 Theme</title>
+    <title>University War</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?=$view_path?>assets/css/bootstrap.css" rel="stylesheet">
@@ -17,13 +17,18 @@
 
     <script src="<?=$view_path?>assets/js/jquery.min.js"></script>
 	<script src="<?=$view_path?>assets/js/Chart.js"></script>
-	<script src="<?=$view_path?>assets/js/modernizr.custom.js"></script>
+	<!-- <script src="<?=$view_path?>assets/js/modernizr.custom.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=<?php echo $recaptcha_lang; ?>"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 	
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -199,6 +204,7 @@
 		<div class="container">
 			<div class="row">
 				<h3>Ganti dengan grafik</h3>
+				<div id="container_highcharts"></div> <!-- style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div> -->
 				<!--
 				<br>
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
