@@ -169,24 +169,24 @@
                     </div>
                     <div class="col-md-5">
                     	
-                		<a class="btn btn-block btn-social btn-twitter">
+                		<a class="btn btn-block btn-social btn-twitter" href="https://twitter.com/home?status=Gratis%20Arduino%20Satu%20Tahun%20!%20Yuk%20Ikutan%20Promo%20Elektropal%20%23UniversityWar%20di%20Elektropal.com/univwar">
                             <span class="fa fa-twitter"></span> Share melalui Twitter
                         </a>
                 		<br>
                         
-                    	<a class="btn btn-block btn-social btn-facebook col-md-6">
+                    	<a class="btn btn-block btn-social btn-facebook col-md-6" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//Elektropal.com/univwar">
                             <span class="fa fa-facebook"></span> Share melalui Facebook
                         </a>
                     	
                     </div>
                     <div class="col-md-5">
                     	
-                		<a class="btn btn-block btn-social btn-google">
+                		<a class="btn btn-block btn-social btn-google" href="https://plus.google.com/share?url=Http%3A//elektropal.com/univwar">
                             <span class="fa fa-google"></span> Share melalui Google
                         </a>
                 		<br>
                         
-                    	<a class="btn btn-block btn-social btn-reddit col-md-6">
+                    	<a class="btn btn-block btn-social btn-reddit col-md-6" href="mailto:yourfriend@email.com?&subject=Gratis Arduino 1 Tahun&body=Ayo%20guys,%20ikutan%20Elektropal%20%23UniversityWar%20,%20gratis%20arduino%201%20tahun%20loh%20!%20buruan%20cek%20di%20http%3A//Elektropal.com/univwar">
                             <span class="fa fa-envelope"></span> Share melalui Email
                         </a>
                     	
@@ -203,7 +203,7 @@
 	<div id="dg">
 		<div class="container">
 			<div class="row">
-				<h3>Ganti dengan grafik</h3>
+				<!-- <h3>Ganti dengan grafik</h3> -->
 				<div id="container_highcharts" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
 				<!--
 				<br>
@@ -288,12 +288,30 @@
 	<div id="ddg">
 		<div class="container">
 			<div class="row">
-				<h3>Aturan Main</h3>
+				<h2 style="text-align:center">Aturan Main</h2>
 				<div class="col-md-6">
-					Bacaturan main
+					<h3>Ketentuan</h3>
+					<ol>
+						<li>Peserta Univwar harus mendaftar akun email universtasnya ke website elektropal.</li>
+						<li>Akun email akan dinyatakan terdaftar setelah link yang dikirimkan oleh elektropal ke email tersebut diverifikasi.</li>
+						<li>Akun email yang sama tidak bsia digunakan dua kali.</li>
+						<li>Setiap minggunya dua universitas terpilih mendapatkan kesempatan untuk mengikuti Elektropal University War.</li>
+						<li>Keikutsertaan mahasiswa dari universitas yang belum mendapat kesempatan dalam periode pekan-an dianggap tidak valid.</li>
+						<li>Pengumuman peserta university war akan diumumkan pada hari senin setiap minggunya.</li>
+					</ol>
 				</div>
 				<div class="col-md-6">
-					
+					<ol start="7">
+						<li>Universitas pemenang akan dilaksanakan minggu malam, seminggu setelah war selesai.</li>
+						<li>Peserta dari universitas yang menang ebrhak mendapatkan Arduino uno gratis selama setahun setiap belanja di <a href="http://Elektropal.com">Elektropal.com</a> setiap belanja di Elektropal dengan jumlah belanja minimum Rp. 75.000</li>
+					</ol>
+					<h3>Syarat</h3>
+					<ol>
+						<li>Memiliki akun email dari universitas yang menjadi peserta dalam periode mingguan tersebut.</li>
+						<li>Kompetisi terbuka untuk seluruh mahasiswa tidak terbatas pada mahasiswa teknik elektro/teknik mesin dst. selama memiliki email universitas yang sah (*.ac.id)</li>
+						<li>Email yang didaftarkan harus terverifikasi</li>
+
+					</ol>
 				</div>
 			</div>
 		</div><!-- /container -->
@@ -321,7 +339,7 @@
 	        	<div class="panel panel-default">
 	                <div class="panel-heading top-bar" id="paneltitle">
 	                    <div class="col-md-8 col-xs-8">
-	                        <h3 id="titel" class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
+	                        <h3 id="titel" class="panel-title"><!-- <span class="glyphicon glyphicon-comment"></span> --> Pertanyaan? Chat aja!</h3>
 	                    </div>
 	                    <div class="col-md-4 col-xs-4" style="text-align: right;">
 	                        <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>

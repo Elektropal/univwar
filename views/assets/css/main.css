@@ -270,7 +270,7 @@ a:after {
 	background: #f6f6f6;
 	padding-top: 10px;
 	padding-bottom: 30px;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 #ddg .btn {
@@ -661,6 +661,10 @@ a:after {
 	    bottom: 0;
 	    right: 25%;
 	}
+	#titel{
+		font-size: 14px;
+	}
+
 	.chat .col-md-2, .col-md-10{
 	    padding:0;
 	}
@@ -687,7 +691,7 @@ a:after {
 	  overflow-x:hidden;
 	}
 	.chat .top-bar {
-	  background: #888;
+	  background: #dfdfdf;
 	  color: white;
 	  padding: 10px;
 	  position: relative;
