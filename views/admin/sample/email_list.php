@@ -39,6 +39,7 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="<?=Flight::get('my_base_url')?>/email_list">Email Campaign</a></li>
 					<li><a href="<?=Flight::get('my_base_url')?>/chat">Chat</a></li>
+					<li><a href="<?=Flight::get('my_base_url')?>/university_list">Manage University</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
